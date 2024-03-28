@@ -4,46 +4,63 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Máquina de conversão</title>
+    <link rel="stylesheet" href="machine.css">
 </head>
 
 <body>
-    
-    <center>
-        <h1>Marise's Machine</h1>
-
-<br><br>
-
-        <h3>Decimal</h3>
-        <input id="demo1" type="text" placeholder="Digite o valor em decimal">
-
-<br><br>
-
-        <h3>converter para:</h3>
-
-
-        <input onclick="aparecer_octal()" type="checkbox"><b>Octal</b>
-<br>
-        <div id="demo2"></div>
-
-<br><br>
-
-        <input onclick="aparecer_hexa()" type="checkbox"><b>Hexadecimal</b>
-<br>
-        <div id="demo3"></div>
         
-<br><br>
+        <header>
+         <h1>Convertion Machine</h1>
+        </header>
 
-        <input onclick="aparecer_bin()" type="checkbox"><b>Binário</b>
-<br>
-        <div id="demo4"></div>
+       <main>
+        <!-- inicio da primeira parte da página -->
+        <div class="inicio_div">
+         
+        <span>Selecione a base para a conversão</span> 
+        <br>
+        <input id="demo1" type="text" placeholder="Digite o valor"> 
+        <select id="selects_options">
+         <option value="">Binário</option>
+         <option value="">Octal</option>
+         <option value="">Hexadecimal</option>
+         <option value="">Decinal</option>
+        </select>
+        
+        </div>
+         <!-- fim da primeira parte da página -->
+        
+          <!-- inicio da parte resultado da página -->
+        <div class="resultado_div">
+        
+                <input onclick="aparecer_octal()" type="checkbox"><b>Octal</b>
+                <br>
+                <div id="demo2"></div>
+        
+                <br><br>
+        
+                <input onclick="aparecer_hexa()" type="checkbox"><b>Hexadecimal</b>
+                <br>
+                <div id="demo3"></div>
+                
+                <br><br>
+        
+                <input onclick="aparecer_bin()" type="checkbox"><b>Binário</b>
+                <br>
+                <div id="demo4"></div>
+        
+                <br><br>
+        
+                <input onclick="aparecer_bin()" type="checkbox"><b>Binário</b>
+                <br>
+                <div id="demo4"></div>
 
-<br><br>
+                <br> <br>
 
-<button onclick="converter()">Converter</button>
-    </center>
-
-
-
+                <button onclick="converter()">Converter</button>
+                </div>
+        <!-- fim da parte resultado da página -->
+       </main>
 
 <script>
 
@@ -56,11 +73,6 @@ let octal = decimal.toString(8);
 let hexadecimal = decimal.toString(16);
 
 let binaria = decimal.toString(2);
-
-console.log (decimal);
-console.log (octal);
-console.log (hexadecimal);
-console.log (binaria);
 
 document.getElementById("demo1").innerHTML = ` ${decimal}`;
 document.getElementById("demo2").innerHTML = ` ${octal}`;
@@ -81,5 +93,5 @@ function aparecer_hexa() {
 function aparecer_octal() {
     demo2.style.display = 'block'
 }
-document.bgColor = "#00ffff";
+
 </script></body></html>

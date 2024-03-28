@@ -1,3 +1,43 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #8864a080;
+    
+}
+
+header {
+ background-color: rgba(69, 29, 97, 0.502);
+ display: flex;
+ padding: 18px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.inicio_div{
+    align-self: center;
+    background-color:#e9dccc80;
+    padding: 150px;
+    margin-left: 80px;
+    margin-right: 70px;
+
+
+}
+
+.resultado_div{
+    align-self: center;
+    background-color:#e9dccc80;
+    padding: 150px;
+    margin-right: 80px;
+    margin-top: 10px;
+}
+
 #demo2 {
     display: none;
     background-color: #dcdcdc; 
@@ -29,4 +69,8 @@
    width: 60%; 
    height: 50px; 
    font-weight: 500
+}
+
+#titulo{
+    background-color: blueviolet;
 }
